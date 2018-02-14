@@ -1,78 +1,78 @@
+# input5-nmask-netid.py
 def calcnetid(ipv4,nmask,netid):
-	for i n in range(0,4):
-		netid[i] = 1pv4[i] & nmask[i]
+	for i in range(0,4):
+		netid[i] = int(ipv4[i]) & int(nmask[i])
 	return netid
 
-def getsubnet(cidr,nmask):
-	print('cidr',cidr)
+def getnmask(cidr,nmask):
+	print('cidr',cidr,nmask)
 	cidr = int(cidr)
-	if(cidr == 32):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 31):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 30):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 29):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 28):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 27):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 26):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 25):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 24):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 23):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 22):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 21):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 20):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 19):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 18):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 17):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 16):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 15):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 14):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 13):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 12):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 11):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 10):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 9):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 8):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 7):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 6):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 5):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 4):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 3):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 2):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 1):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	if(cidr == 0):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
-	print('print nmask',nmask)
+	if cidr == 32:
+		nmask = [255,255,255,255]
+	if cidr == 31:
+		nmask = [255,255,255,254]
+	if cidr == 30:
+		nmask = [255,255,255,252]
+	if cidr == 29:
+		nmask = [255,255,255,248]
+	if cidr == 28:
+		nmask = [255,255,255,240]
+	if cidr == 27:
+		nmask = [255,255,255,224]
+	if cidr == 26:
+		nmask = [255,255,255,196]
+	if cidr == 25:
+		nmask = [255,255,255,128]
+	if cidr == 24:
+		nmask = [255,255,255,0]
+	if cidr == 23:
+		nmask = [255,255,255,0]
+	if cidr == 22:
+		nmask = [255,255,255,0]
+	if cidr == 21:
+		nmask = [255,255,255,0]
+	if cidr == 19:
+		nmask = [255,255,255,0]
+	if cidr == 18:
+		nmask = [255,255,255,0]
+	if cidr == 17:
+		nmask = [255,255,255,0]
+	if cidr == 16:
+		nmask = [255,255,0,0]
+	if cidr == 15:
+		nmask = [255,255,255,254]
+	if cidr == 14:
+		nmask = [255,255,255,252]
+	if cidr == 13:
+		nmask = [255,255,255,255]
+	if cidr == 12:
+		nmask = [255,255,255,254]
+	if cidr == 11:
+		nmask = [255,255,255,252]
+	if cidr == 10:
+		nmask = [255,255,255,255]
+	if cidr == 9:
+		nmask = [255,255,255,254]
+	if cidr == 8:
+		nmask = [255,255,255,252]
+	if cidr == 7:
+		nmask = [255,255,255,255]
+	if cidr == 6:
+		nmask = [255,255,255,254]
+	if cidr == 5:
+		nmask = [255,255,255,252]
+	if cidr == 4:
+		nmask = [255,255,255,255]
+	if cidr == 3:
+		nmask = [255,255,255,254]
+	if cidr == 2:
+		nmask = [255,255,255,252]
+	if cidr == 1:
+		nmask = [255,255,255,255]
+	if cidr == 0:
+		nmask = [0,0,0,0]
+		
+	print('pr.int nmask',nmask)
 	return nmask
 
 
@@ -93,10 +93,13 @@ def main():
 	cidr = input("CIDR :")
 	print (o1,o2,o3,o4, "/", cidr)
 	ipv4[0] = o1; ipv4[1] = o2; ipv4[2] = o3; ipv4[3] = o4;   
-	nmask = getsubnet(cidr,nmask)
-	netid = calcnetid(ipv4,nmask,netid)
-	print(ipv4,cidr,nmask)
+	nmask = getnmask(cidr,nmask)
+	netid =  calcnetid(ipv4,nmask,netid)
+	print(ipv4,cidr)
+	print(nmask)
 	print(netid)
+	
 main()
+
 
 
