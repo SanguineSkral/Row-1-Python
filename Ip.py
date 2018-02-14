@@ -5,39 +5,39 @@ def getsubnet(cidr,nmask):
 	if(cidr == 32):
 		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
 	if(cidr == 31):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 254;
 	if(cidr == 30):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 252;
 	if(cidr == 29):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 248;
 	if(cidr == 28):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 240;
 	if(cidr == 27):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 224;
 	if(cidr == 26):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 192;
 	if(cidr == 25):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 128;
 	if(cidr == 24):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 0;
 	if(cidr == 23):
 		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
 	if(cidr == 22):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 254;nmask[3] = 255;
 	if(cidr == 21):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 252;nmask[3] = 255;
 	if(cidr == 20):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 248;nmask[3] = 255;
 	if(cidr == 19):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 250;nmask[3] = 255;
 	if(cidr == 18):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 224;nmask[3] = 255;
 	if(cidr == 17):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 192;nmask[3] = 255;
 	if(cidr == 16):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 128;nmask[3] = 255;
 	if(cidr == 15):
-		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
+		nmask[0] = 255; nmask[1] = 255;nmask[2] = 0;nmask[3] = 255;
 	if(cidr == 14):
 		nmask[0] = 255; nmask[1] = 255;nmask[2] = 255;nmask[3] = 255;
 	if(cidr == 13):
