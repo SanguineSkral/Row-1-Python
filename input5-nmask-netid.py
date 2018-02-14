@@ -94,6 +94,7 @@ def main():
 	print (o1,o2,o3,o4, "/", cidr)
 	ipv4[0] = o1; ipv4[1] = o2; ipv4[2] = o3; ipv4[3] = o4;   
 	nmask = getsubnet(cidr,nmask)
+	netid = calcnetid(ipv4,nmask,netid)
 	print(ipv4,cidr,nmask)
 	print(netid)
 main()
