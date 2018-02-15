@@ -3,7 +3,7 @@ def calcbcast(nmask,netid,bcastip):
 	for i in range(0,4):
 		imask[i] = ~nmask[i]&255
 		bcast[i] = netid[i]^imask[i]
-return bcast
+	return bcast
 
 def calcnetid(ipv4,nmask,netid):
 	for i in range(0,4):
@@ -32,47 +32,47 @@ def getnmask(cidr,nmask):
 	if cidr == 24:
 		nmask = [255,255,255,0]
 	if cidr == 23:
-		nmask = [255,255,255,0]
+		nmask = [255,255,254,0]
 	if cidr == 22:
-		nmask = [255,255,255,0]
+		nmask = [255,255,252,0]
 	if cidr == 21:
-		nmask = [255,255,255,0]
+		nmask = [255,255,248,0]
 	if cidr == 19:
-		nmask = [255,255,255,0]
+		nmask = [255,255,240,0]
 	if cidr == 18:
-		nmask = [255,255,255,0]
+		nmask = [255,255,224,0]
 	if cidr == 17:
-		nmask = [255,255,255,0]
+		nmask = [255,255,192,0]
 	if cidr == 16:
-		nmask = [255,255,0,0]
+		nmask = [255,255,128,0]
 	if cidr == 15:
-		nmask = [255,255,255,254]
+		nmask = [255,255,0,254]
 	if cidr == 14:
 		nmask = [255,255,255,252]
 	if cidr == 13:
-		nmask = [255,255,255,255]
+		nmask = [255,254,255,255]
 	if cidr == 12:
-		nmask = [255,255,255,254]
+		nmask = [255,252,255,254]
 	if cidr == 11:
-		nmask = [255,255,255,252]
+		nmask = [255,248,255,252]
 	if cidr == 10:
-		nmask = [255,255,255,255]
+		nmask = [255,240,255,255]
 	if cidr == 9:
-		nmask = [255,255,255,254]
+		nmask = [255,224,255,254]
 	if cidr == 8:
-		nmask = [255,255,255,252]
+		nmask = [255,192,255,252]
 	if cidr == 7:
-		nmask = [255,255,255,255]
+		nmask = [255,128,255,255]
 	if cidr == 6:
-		nmask = [255,255,255,254]
+		nmask = [255,0,255,254]
 	if cidr == 5:
 		nmask = [255,255,255,252]
 	if cidr == 4:
-		nmask = [255,255,255,255]
+		nmask = [255,254,255,255]
 	if cidr == 3:
-		nmask = [255,255,255,254]
+		nmask = [255,252,255,254]
 	if cidr == 2:
-		nmask = [255,255,255,252]
+		nmask = [255,248,255,252]
 	if cidr == 1:
 		nmask = [255,255,255,255]
 	if cidr == 0:
@@ -83,7 +83,7 @@ def getnmask(cidr,nmask):
 
 
 def main():
-	cidr = -1
+	cidr = nmask
 	ipv4 = [-1,-1,-1,-1]
 	nmask =  [-1,-1,-1,-1]
 	netid = [-1,-1,-1,-1]
@@ -109,6 +109,9 @@ def main():
 	print("NET-MASK",nmask)
 	print("NETWORK ID",netid)
 main()
+
+
+
 
 
 
