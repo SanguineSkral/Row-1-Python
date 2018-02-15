@@ -48,33 +48,33 @@ def getnmask(cidr,nmask):
 	if cidr == 15:
 		nmask = [255,255,0,254]
 	if cidr == 14:
-		nmask = [255,255,255,252]
+		nmask = [255,255,255,0]
 	if cidr == 13:
-		nmask = [255,254,255,255]
+		nmask = [255,254,255,0]
 	if cidr == 12:
-		nmask = [255,252,255,254]
+		nmask = [255,252,255,0]
 	if cidr == 11:
-		nmask = [255,248,255,252]
+		nmask = [255,248,255,0]
 	if cidr == 10:
-		nmask = [255,240,255,255]
+		nmask = [255,240,255,0]
 	if cidr == 9:
-		nmask = [255,224,255,254]
+		nmask = [255,224,255,0]
 	if cidr == 8:
-		nmask = [255,192,255,252]
+		nmask = [255,192,255,0]
 	if cidr == 7:
-		nmask = [255,128,255,255]
+		nmask = [255,128,255,0]
 	if cidr == 6:
-		nmask = [255,0,255,254]
+		nmask = [255,0,255,0]
 	if cidr == 5:
-		nmask = [255,255,255,252]
+		nmask = [255,255,255,0]
 	if cidr == 4:
-		nmask = [255,254,255,255]
+		nmask = [254,254,255,0]
 	if cidr == 3:
-		nmask = [255,252,255,254]
+		nmask = [252,252,255,0]
 	if cidr == 2:
-		nmask = [255,248,255,252]
+		nmask = [248,248,255,0]
 	if cidr == 1:
-		nmask = [255,255,255,255]
+		nmask = [240,255,255,0]
 	if cidr == 0:
 		nmask = [0,0,0,0]
 		
@@ -109,9 +109,3 @@ def main():
 	print("NET-MASK",nmask)
 	print("NETWORK ID",netid)
 main()
-
-
-
-
-
-
