@@ -26,7 +26,7 @@ def getnmask(cidr,nmask):
 	if cidr == 27:
 		nmask = [255,255,255,224]
 	if cidr == 26:
-		nmask = [255,255,255,196]
+		nmask = [255,255,255,192]
 	if cidr == 25:
 		nmask = [255,255,255,128]
 	if cidr == 24:
@@ -37,42 +37,44 @@ def getnmask(cidr,nmask):
 		nmask = [255,255,252,0]
 	if cidr == 21:
 		nmask = [255,255,248,0]
-	if cidr == 19:
+	if cidr == 20:
 		nmask = [255,255,240,0]
-	if cidr == 18:
+	if cidr == 19:
 		nmask = [255,255,224,0]
-	if cidr == 17:
+	if cidr == 18:
 		nmask = [255,255,192,0]
-	if cidr == 16:
+	if cidr == 17:
 		nmask = [255,255,128,0]
-	if cidr == 15:
+	if cidr == 16:
 		nmask = [255,255,0,0]
-	if cidr == 14:
+	if cidr == 15:
 		nmask = [255,254,0,0]
-	if cidr == 13:
+	if cidr == 14:
 		nmask = [255,252,0,0]
-	if cidr == 12:
+	if cidr == 13:
 		nmask = [255,248,0,0]
-	if cidr == 11:
+	if cidr == 12:
 		nmask = [255,240,0,0]
-	if cidr == 10:
+	if cidr == 11:
 		nmask = [255,224,0,0]
-	if cidr == 9:
+	if cidr == 10:
 		nmask = [255,192,0,0]
-	if cidr == 8:
+	if cidr == 9:
 		nmask = [255,128,0,0]
+	if cidr == 8:
+		nmask = [255,0,0,0]
 	if cidr == 7:
-		nmask = [255,0,0,0]
-	if cidr == 6:
-		nmask = [255,0,0,0]
-	if cidr == 5:
 		nmask = [254,0,0,0]
-	if cidr == 4:
+	if cidr == 6:
 		nmask = [252,0,0,0]
-	if cidr == 3:
+	if cidr == 5:
 		nmask = [248,0,0,0]
-	if cidr == 2:
+	if cidr == 4:
 		nmask = [240,0,0,0]
+	if cidr == 3:
+		nmask = [224,0,0,0]
+	if cidr == 2:
+		nmask = [192,0,0,0]
 	if cidr == 1:
 		nmask = [128,0,0,0]
 	if cidr == 0:
