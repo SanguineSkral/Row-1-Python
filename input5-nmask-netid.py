@@ -1,4 +1,10 @@
 # input5-nmask-netid.py
+def calcbcast(nmask,netid,bcastip):
+	for i in range(0,4):
+		imask[i] = ~nmask[i]&255
+		bcast[i] = netid[i]^imask[i]
+return bcast
+
 def calcnetid(ipv4,nmask,netid):
 	for i in range(0,4):
 		netid[i] = int(ipv4[i]) & int(nmask[i])
@@ -94,11 +100,14 @@ def main():
 	print (o1,o2,o3,o4, "/", cidr)
 	ipv4[0] = o1; ipv4[1] = o2; ipv4[2] = o3; ipv4[3] = o4;   
 	nmask = getnmask(cidr,nmask)
-	netid =  calcnetid(ipv4,nmask,netid)
-	print(ipv4,cidr)
-	print(nmask)
-	print(netid)
-	
+	netid = calcnetid(ipv4,nmask,netid)
+	#bcast = call the function
+	#clean up the output
+	#calculte the starting ip and the ending ip
+	print(ipv4,cidr,nmask)
+	print("IP",ipv4)
+	print("NET-MASK",nmask)
+	print("NETWORK ID",netid)
 main()
 
 
